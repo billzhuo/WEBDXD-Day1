@@ -3,6 +3,10 @@ html{
 	font-size:18px;
 }
 
+a {
+	text-decoration: none;
+}
+
 body{
 	background-color:#000;
 	color:rgba(255,255,255,.8);
@@ -22,6 +26,10 @@ h2{
 }
 
 nav ul li{
+	display:inline-block;
+}
+
+nav ul li a{
 	background-color:#1099FF;
 	display:inline-block;
 	margin:20px 50px 20px 50px;
@@ -31,8 +39,7 @@ nav ul li{
 	border-radius: 5px;
 }
 
-
-nav ul li:hover {
+nav ul li:hover a{
 	background-color:black;
 	display:inline-block;
 	margin:20px 50px 20px 50px;
@@ -51,6 +58,8 @@ nav ul{
 
 nav{
 	background-color: white;
+	position:fixed;
+	width: 100%;
 }
 
 .banner{
@@ -64,4 +73,25 @@ ul div {
 	display: inline-block;
 	list-style-type: none;
 	margin:20;
+}
+
+.movie-table {
+	border:1px solid white;
+	width: 80%;
+	margin: 100px auto 0 auto;
+}
+
+.movie-table tr th, .movie-table tr td {
+	padding: 20px;
+	border:1px solid white;
+	text-align: center;
+}
+
+.column1 {
+	width: 250px;
+	color: #1099FF;
+}
+
+thead{
+	color:orange;
 }
